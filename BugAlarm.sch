@@ -1,0 +1,581 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L mylib:PIC16F1705 U?
+U 1 1 6278213D
+P 4550 3350
+F 0 "U?" H 4550 3855 60  0000 C CNN
+F 1 "PIC16F1705" H 4550 3765 39  0000 C CNN
+F 2 "" H 4550 3350 60  0000 C CNN
+F 3 "" H 4550 3350 60  0000 C CNN
+	1    4550 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 6278611E
+P 5550 2250
+F 0 "#PWR?" H 5550 2100 50  0001 C CNN
+F 1 "+5V" H 5565 2423 50  0000 C CNN
+F 2 "" H 5550 2250 50  0001 C CNN
+F 3 "" H 5550 2250 50  0001 C CNN
+	1    5550 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L mylib:BD6212HFP DRV?
+U 1 1 62786A16
+P 6000 2600
+F 0 "DRV?" H 6432 2688 50  0000 L CNN
+F 1 "BD6212HFP" H 6432 2597 50  0000 L CNN
+F 2 "" H 6000 2600 50  0001 C CNN
+F 3 "" H 6000 2600 50  0001 C CNN
+	1    6000 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 2700 5550 2700
+Wire Wire Line
+	5550 2700 5550 2250
+$Comp
+L Motor:Motor_DC M?
+U 1 1 62787289
+P 7300 3050
+F 0 "M?" H 7458 3046 50  0000 L CNN
+F 1 "Motor_DC" H 6750 2900 50  0000 L CNN
+F 2 "" H 7300 2960 50  0001 C CNN
+F 3 "~" H 7300 2960 50  0001 C CNN
+	1    7300 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Motor:Motor_DC M?
+U 1 1 62787AAE
+P 7700 3050
+F 0 "M?" H 7858 3046 50  0000 L CNN
+F 1 "Motor_DC" H 7858 2955 50  0000 L CNN
+F 2 "" H 7700 2960 50  0001 C CNN
+F 3 "~" H 7700 2960 50  0001 C CNN
+	1    7700 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 2700 5850 2800
+Wire Wire Line
+	7300 2800 7300 2850
+Wire Wire Line
+	6250 2700 6250 2750
+Wire Wire Line
+	7700 2750 7700 2850
+$Comp
+L power:GND #PWR?
+U 1 1 62788CCD
+P 7300 3400
+F 0 "#PWR?" H 7300 3150 50  0001 C CNN
+F 1 "GND" H 7305 3227 50  0000 C CNN
+F 2 "" H 7300 3400 50  0001 C CNN
+F 3 "" H 7300 3400 50  0001 C CNN
+	1    7300 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 3400 7300 3350
+$Comp
+L power:GND #PWR?
+U 1 1 627891E1
+P 7700 3400
+F 0 "#PWR?" H 7700 3150 50  0001 C CNN
+F 1 "GND" H 7705 3227 50  0000 C CNN
+F 2 "" H 7700 3400 50  0001 C CNN
+F 3 "" H 7700 3400 50  0001 C CNN
+	1    7700 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 3400 7700 3350
+$Comp
+L power:GND #PWR?
+U 1 1 627897F6
+P 5050 3150
+F 0 "#PWR?" H 5050 2900 50  0001 C CNN
+F 1 "GND" H 5055 2977 50  0000 C CNN
+F 2 "" H 5050 3150 50  0001 C CNN
+F 3 "" H 5050 3150 50  0001 C CNN
+	1    5050 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 3050 4800 3050
+$Comp
+L power:GND #PWR?
+U 1 1 62789BA9
+P 6050 3150
+F 0 "#PWR?" H 6050 2900 50  0001 C CNN
+F 1 "GND" H 6055 2977 50  0000 C CNN
+F 2 "" H 6050 3150 50  0001 C CNN
+F 3 "" H 6050 3150 50  0001 C CNN
+	1    6050 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 3150 6050 2700
+Text Label 4300 3450 2    39   ~ 0
+PIC_RX
+$Comp
+L mylib:DFPlayer U?
+U 1 1 6278A588
+P 3300 3500
+F 0 "U?" H 3300 4065 50  0000 C CNN
+F 1 "DFPlayer" H 3300 3974 50  0000 C CNN
+F 2 "" H 3300 3650 50  0001 C CNN
+F 3 "" H 3300 3650 50  0001 C CNN
+	1    3300 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Speaker LS?
+U 1 1 6278B9B1
+P 2250 3650
+F 0 "LS?" H 2213 3967 50  0000 C CNN
+F 1 "Speaker" H 2213 3876 50  0000 C CNN
+F 2 "" H 2250 3450 50  0001 C CNN
+F 3 "~" H 2240 3600 50  0001 C CNN
+	1    2250 3650
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 3650 2950 3650
+Wire Wire Line
+	2950 3850 2500 3850
+Wire Wire Line
+	2500 3850 2500 3750
+Wire Wire Line
+	2500 3750 2450 3750
+$Comp
+L power:GND #PWR?
+U 1 1 6278CE57
+P 2900 4000
+F 0 "#PWR?" H 2900 3750 50  0001 C CNN
+F 1 "GND" H 2905 3827 50  0000 C CNN
+F 2 "" H 2900 4000 50  0001 C CNN
+F 3 "" H 2900 4000 50  0001 C CNN
+	1    2900 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 4000 2900 3750
+Wire Wire Line
+	2900 3750 2950 3750
+Wire Wire Line
+	4300 3650 3650 3650
+$Comp
+L Device:LED D?
+U 1 1 6278ED17
+P 5600 4000
+F 0 "D?" V 5639 3883 50  0000 R CNN
+F 1 "LED" V 5548 3883 50  0000 R CNN
+F 2 "" H 5600 4000 50  0001 C CNN
+F 3 "~" H 5600 4000 50  0001 C CNN
+	1    5600 4000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 6278F3E1
+P 5950 4000
+F 0 "D?" V 5989 3883 50  0000 R CNN
+F 1 "LED" V 5898 3883 50  0000 R CNN
+F 2 "" H 5950 4000 50  0001 C CNN
+F 3 "~" H 5950 4000 50  0001 C CNN
+	1    5950 4000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 6278FA32
+P 6700 4000
+F 0 "D?" V 6739 3883 50  0000 R CNN
+F 1 "LED" V 6648 3883 50  0000 R CNN
+F 2 "" H 6700 4000 50  0001 C CNN
+F 3 "~" H 6700 4000 50  0001 C CNN
+	1    6700 4000
+	0    -1   -1   0   
+$EndComp
+Text Notes 5350 4100 0    50   ~ 0
+Red
+Text Notes 7150 4050 0    50   ~ 0
+Yellow
+$Comp
+L power:+3.3V #PWR?
+U 1 1 6279037A
+P 5800 3600
+F 0 "#PWR?" H 5800 3450 50  0001 C CNN
+F 1 "+3.3V" H 5815 3773 50  0000 C CNN
+F 2 "" H 5800 3600 50  0001 C CNN
+F 3 "" H 5800 3600 50  0001 C CNN
+	1    5800 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 3600 5800 3700
+Wire Wire Line
+	5800 3700 5600 3700
+Wire Wire Line
+	5600 3700 5600 3850
+Wire Wire Line
+	5800 3700 5950 3700
+Wire Wire Line
+	5950 3700 5950 3850
+Connection ~ 5800 3700
+$Comp
+L Device:R_Small R?
+U 1 1 627920E3
+P 5600 4350
+F 0 "R?" H 5659 4396 50  0000 L CNN
+F 1 "200" H 5659 4305 50  0000 L CNN
+F 2 "" H 5600 4350 50  0001 C CNN
+F 3 "~" H 5600 4350 50  0001 C CNN
+	1    5600 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 627926E0
+P 5950 4350
+F 0 "R?" H 6009 4396 50  0000 L CNN
+F 1 "200" H 6009 4305 50  0000 L CNN
+F 2 "" H 5950 4350 50  0001 C CNN
+F 3 "~" H 5950 4350 50  0001 C CNN
+	1    5950 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 4150 5600 4250
+Wire Wire Line
+	5950 4150 5950 4250
+$Comp
+L Transistor_BJT:2SC1815 Q?
+U 1 1 62793802
+P 5650 4850
+F 0 "Q?" H 5840 4896 50  0000 L CNN
+F 1 "2SC1815" H 5350 4700 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 5850 4775 50  0001 L CIN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Toshiba%20PDFs/2SC1815.pdf" H 5650 4850 50  0001 L CNN
+	1    5650 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 4650 5750 4550
+Wire Wire Line
+	5750 4550 5600 4550
+Wire Wire Line
+	5600 4550 5600 4450
+Wire Wire Line
+	5750 4550 5950 4550
+Wire Wire Line
+	5950 4550 5950 4450
+Connection ~ 5750 4550
+$Comp
+L power:GND #PWR?
+U 1 1 62794F73
+P 5750 5150
+F 0 "#PWR?" H 5750 4900 50  0001 C CNN
+F 1 "GND" H 5755 4977 50  0000 C CNN
+F 2 "" H 5750 5150 50  0001 C CNN
+F 3 "" H 5750 5150 50  0001 C CNN
+	1    5750 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 5050 5750 5150
+Text Label 5450 4850 2    50   ~ 0
+Red
+$Comp
+L Transistor_BJT:2SC1815 Q?
+U 1 1 62797AF3
+P 6600 4850
+F 0 "Q?" H 6790 4896 50  0000 L CNN
+F 1 "2SC1815" H 6300 4700 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 6800 4775 50  0001 L CIN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Toshiba%20PDFs/2SC1815.pdf" H 6600 4850 50  0001 L CNN
+	1    6600 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 62797AFF
+P 6700 5150
+F 0 "#PWR?" H 6700 4900 50  0001 C CNN
+F 1 "GND" H 6705 4977 50  0000 C CNN
+F 2 "" H 6700 5150 50  0001 C CNN
+F 3 "" H 6700 5150 50  0001 C CNN
+	1    6700 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 5050 6700 5150
+Text Label 6400 4850 2    50   ~ 0
+Yellow
+$Comp
+L Device:R_Small R?
+U 1 1 6279BE26
+P 6700 4350
+F 0 "R?" H 6759 4396 50  0000 L CNN
+F 1 "R_Small" H 6759 4305 50  0000 L CNN
+F 2 "" H 6700 4350 50  0001 C CNN
+F 3 "~" H 6700 4350 50  0001 C CNN
+	1    6700 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 4450 6700 4650
+Wire Wire Line
+	6700 4250 6700 4150
+Wire Wire Line
+	6700 3850 6700 3700
+Wire Wire Line
+	6700 3700 5950 3700
+Connection ~ 5950 3700
+$Comp
+L RF_ZigBee:XBee_SMT U?
+U 1 1 6279E11A
+P 2550 5400
+F 0 "U?" H 2550 6581 50  0000 C CNN
+F 1 "XBee_SMT" H 2550 6490 50  0000 C CNN
+F 2 "RF_Module:Digi_XBee_SMT" H 3390 4340 50  0001 C CNN
+F 3 "http://www.digi.com/resources/documentation/digidocs/pdfs/90002126.pdf" H 2550 5000 50  0001 C CNN
+	1    2550 5400
+	-1   0    0    -1  
+$EndComp
+Text Label 3650 4600 0    39   ~ 0
+PIC_RX
+Text Label 4300 3550 2    39   ~ 0
+PIC_TX
+Text Label 3650 4700 0    39   ~ 0
+PIC_TX
+$Comp
+L power:GND #PWR?
+U 1 1 627A40D6
+P 2750 6800
+F 0 "#PWR?" H 2750 6550 50  0001 C CNN
+F 1 "GND" H 2755 6627 50  0000 C CNN
+F 2 "" H 2750 6800 50  0001 C CNN
+F 3 "" H 2750 6800 50  0001 C CNN
+	1    2750 6800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 6800 2750 6650
+Wire Wire Line
+	2750 6650 2650 6650
+Wire Wire Line
+	2350 6650 2350 6500
+Connection ~ 2750 6650
+Wire Wire Line
+	2750 6650 2750 6500
+Wire Wire Line
+	2450 6500 2450 6650
+Connection ~ 2450 6650
+Wire Wire Line
+	2450 6650 2350 6650
+Wire Wire Line
+	2550 6500 2550 6650
+Connection ~ 2550 6650
+Wire Wire Line
+	2550 6650 2450 6650
+Wire Wire Line
+	2650 6500 2650 6650
+Connection ~ 2650 6650
+Wire Wire Line
+	2650 6650 2550 6650
+$Comp
+L Connector:Jack-DC J?
+U 1 1 627A9711
+P 2400 2250
+F 0 "J?" H 2171 2208 50  0000 R CNN
+F 1 "Jack-DC" H 2171 2299 50  0000 R CNN
+F 2 "" H 2450 2210 50  0001 C CNN
+F 3 "~" H 2450 2210 50  0001 C CNN
+	1    2400 2250
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 627AB734
+P 2700 2650
+F 0 "#PWR?" H 2700 2400 50  0001 C CNN
+F 1 "GND" H 2705 2477 50  0000 C CNN
+F 2 "" H 2700 2650 50  0001 C CNN
+F 3 "" H 2700 2650 50  0001 C CNN
+	1    2700 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 2650 2700 2550
+$Comp
+L power:+5V #PWR?
+U 1 1 627ACAB9
+P 2700 1850
+F 0 "#PWR?" H 2700 1700 50  0001 C CNN
+F 1 "+5V" H 2715 2023 50  0000 C CNN
+F 2 "" H 2700 1850 50  0001 C CNN
+F 3 "" H 2700 1850 50  0001 C CNN
+	1    2700 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 1850 2700 1950
+$Comp
+L Device:C_Small C?
+U 1 1 627AFC17
+P 2850 2250
+F 0 "C?" H 2942 2296 50  0000 L CNN
+F 1 "0.1u" H 2942 2205 50  0000 L CNN
+F 2 "" H 2850 2250 50  0001 C CNN
+F 3 "~" H 2850 2250 50  0001 C CNN
+	1    2850 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1_Small C?
+U 1 1 627B023F
+P 3150 2250
+F 0 "C?" H 3241 2296 50  0000 L CNN
+F 1 "2.2u" H 3241 2205 50  0000 L CNN
+F 2 "" H 3150 2250 50  0001 C CNN
+F 3 "~" H 3150 2250 50  0001 C CNN
+	1    3150 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 2350 3150 2550
+Wire Wire Line
+	3150 2550 2850 2550
+Connection ~ 2700 2550
+Wire Wire Line
+	2700 2550 2700 2350
+Wire Wire Line
+	2850 2350 2850 2550
+Connection ~ 2850 2550
+Wire Wire Line
+	2850 2550 2700 2550
+Wire Wire Line
+	2850 2150 2850 1950
+Wire Wire Line
+	2850 1950 2700 1950
+Connection ~ 2700 1950
+Wire Wire Line
+	2700 1950 2700 2150
+Wire Wire Line
+	2850 1950 3150 1950
+Wire Wire Line
+	3150 1950 3150 2150
+Connection ~ 2850 1950
+Wire Wire Line
+	5050 3150 5050 3050
+$Comp
+L Device:C_Small C?
+U 1 1 627B7263
+P 5050 2900
+F 0 "C?" H 5142 2946 50  0000 L CNN
+F 1 "0.1u" H 5142 2855 50  0000 L CNN
+F 2 "" H 5050 2900 50  0001 C CNN
+F 3 "~" H 5050 2900 50  0001 C CNN
+	1    5050 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 3000 5050 3050
+Connection ~ 5050 3050
+$Comp
+L power:+5V #PWR?
+U 1 1 627B9135
+P 5050 2750
+F 0 "#PWR?" H 5050 2600 50  0001 C CNN
+F 1 "+5V" H 5065 2923 50  0000 C CNN
+F 2 "" H 5050 2750 50  0001 C CNN
+F 3 "" H 5050 2750 50  0001 C CNN
+	1    5050 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 2750 5050 2800
+$Comp
+L Device:CP1_Small C?
+U 1 1 627BC8F4
+P 5550 2900
+F 0 "C?" H 5641 2946 50  0000 L CNN
+F 1 "1u" H 5641 2855 50  0000 L CNN
+F 2 "" H 5550 2900 50  0001 C CNN
+F 3 "~" H 5550 2900 50  0001 C CNN
+	1    5550 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 627BCE4F
+P 5550 3150
+F 0 "#PWR?" H 5550 2900 50  0001 C CNN
+F 1 "GND" H 5555 2977 50  0000 C CNN
+F 2 "" H 5550 3150 50  0001 C CNN
+F 3 "" H 5550 3150 50  0001 C CNN
+	1    5550 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 3150 5550 3000
+Wire Wire Line
+	5550 2800 5550 2700
+Connection ~ 5550 2700
+Text Label 4800 3650 0    39   ~ 0
+Yellow
+Text Label 4800 3550 0    39   ~ 0
+Red
+$Comp
+L power:+5V #PWR?
+U 1 1 627C25E0
+P 4300 2750
+F 0 "#PWR?" H 4300 2600 50  0001 C CNN
+F 1 "+5V" H 4315 2923 50  0000 C CNN
+F 2 "" H 4300 2750 50  0001 C CNN
+F 3 "" H 4300 2750 50  0001 C CNN
+	1    4300 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 2750 4300 3050
+Text Label 4300 3150 2    39   ~ 0
+F
+Text Label 4300 3250 2    39   ~ 0
+R
+Text Label 5950 2700 3    39   ~ 0
+F
+Text Label 6150 2700 3    39   ~ 0
+R
+Wire Wire Line
+	5850 2800 7300 2800
+Wire Wire Line
+	6250 2750 7700 2750
+$Sheet
+S 3650 1750 900  500 
+U 628FB0FB
+F0 "5V3_3V" 50
+F1 "DCDC_5V3_3V.sch" 50
+F2 "Input5V" I L 3650 1950 50 
+F3 "output_3.3V" O R 4550 1950 50 
+F4 "toGND" O L 3650 2150 50 
+$EndSheet
+$EndSCHEMATC
